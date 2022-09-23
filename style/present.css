@@ -1,0 +1,353 @@
+.present__container {
+    position: relative;
+    text-align: left;
+    margin-bottom: 40px;
+    min-height: 823px;
+}
+
+.present__title {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 150px;
+    letter-spacing: -0.1em;
+    text-align: left;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.present__new-format {
+    font-weight: 400;
+    font-size: 28px;
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 36px;
+}
+
+.present__img {
+    position: absolute;
+    right: 132px;
+    top: 70px;
+    max-height: 762px;
+}
+
+.present {
+    margin-bottom: 109px;
+}
+
+.present__btn {
+    min-width: 374px;
+    min-height: 80px;
+    background-color: var(--purpur);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    box-shadow: 0 0 10px 2px var(--purpur);
+    border: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.present__btn:hover,
+.present__btn:focus {
+    background-color: var(--light-purpur);
+    border-color: var(--dark-purpur);
+    outline: none;
+}
+
+.present__btn:active {
+    background-color: var(--dark-purpur);
+    border-color: var(--dark-purpur);
+}
+
+.present__text {
+    font-size:30px;
+    Line-height: 34.5px;
+    text-align: center;
+    width: 166px;
+}
+
+.present__promo {
+    display: flex;
+    align-items: flex-end;
+    gap: 56px;
+    margin-bottom: 150px;
+    margin-left: 10px;
+}
+
+.present__text_color-number {
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 141px;
+    color: var(--pink);
+}
+
+.present__text_color {
+    font-weight: 900;
+    font-size: 75px;
+    line-height: 106px;
+    color: var(--pink);
+    font-variant: small-caps;
+}
+
+.present__first-line,
+.present__second-line {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.present__next-page {
+    position: absolute;
+    left: 668px;
+    bottom: 79px;
+    content: " ";
+    background-image: url("../icons/down .svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: cover;
+    width: 97px;
+    height: 97px;
+    border: none;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+
+.present__next-page:hover {
+    position: absolute;
+    left: 668px;
+    bottom: 79px;
+    content: " ";
+    background-image: url("../icons/down hover.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 97px;
+    height: 97px;
+    border: none;
+}
+
+.present__next-page:focus {
+    position: absolute;
+    left: 668px;
+    bottom: 79px;
+    content: " ";
+    background-image: url("../icons/down .svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 97px;
+    height: 97px;
+    border: none;
+    outline: 2px solid var(--pink);
+}
+
+.present__next-page:active {
+    position: absolute;
+    left: 668px;
+    bottom: 79px;
+    content: " ";
+    background-image: url("../icons/down-active.svg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    width: 97px;
+    height: 97px;
+    border: none;
+    outline:none;
+}
+
+@media (max-width: 1205px) {
+
+    .present__container {
+        min-height: 583px;
+    }
+
+    .present__title {
+        font-size: 120px;
+        margin-bottom: 14px;
+    }
+
+    .present__new-format {
+        font-size: 22px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+
+    .present__img {
+        right: 56px;
+        top: 73px;
+        max-height: 520px;
+    }
+
+    .present__btn {
+        min-width: 296px;
+        min-height: 64px;
+        font-size: 22px;
+        line-height: 30px;
+        margin-left: 38px;
+    }
+
+    .present__text {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+    .present__text_color-number {
+        font-size: 80px;
+        line-height: 113px;
+    }
+
+    .present__text_color {
+        font-size: 60px;
+        line-height: 85px;
+    }
+
+    .present__promo {
+        margin-left: 0;
+        margin-bottom: 80px;
+        gap: 30px;
+    }
+
+    .present__next-page,
+    .present__next-page:hover,
+    .present__next-page:focus,
+    .present__next-page:active {
+        width: 67px;
+        height: 67px;
+        bottom: 35px;
+        left: 478px;
+    }
+
+    .present {
+        margin-bottom: 94px;
+    }
+
+}
+
+@media (max-width: 814px) {
+    .present {
+        margin-bottom: 83px;
+    }
+
+    .present__container {
+        min-height: 537px;
+    }
+
+    .present__title {
+        font-size: 86px;
+        margin-bottom: 15px;
+        padding-left: 3px;
+    }
+
+    .present__new-format {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 50px;
+        margin-left: 70px;
+    }
+
+    .present__img {
+        right: 32px;
+        top: 67px;
+        max-height: 479px;
+    }
+
+    .present__btn {
+        min-width: 214px;
+        min-height: 46px;
+        font-size: 16px;
+        line-height: 24px;
+        margin-left: 0;
+        border-radius: 4px;
+    }
+
+    .present__text {
+        font-size: 16px;
+        line-height: 18px;
+        max-width: 106px;
+    }
+
+    .present__text_color-number {
+        font-size: 50px;
+        line-height: 71px;
+    }
+
+    .present__text_color {
+        font-size: 40px;
+        line-height: 56px;
+    }
+
+    .present__promo {
+        margin-left: 0;
+        margin-bottom: 101px;
+        gap: 18px;
+    }
+
+    .present__next-page {
+        display: none;
+    }
+}
+
+@media (max-width: 620px) {
+
+    .present__container {
+        min-height: 204px;
+
+    }
+
+    .present__title {
+        font-size: 35px;
+        margin-bottom: 3px;
+        padding-left: 0;
+        letter-spacing: -0.08em;
+
+    }
+
+    .present__new-format {
+        font-size: 10px;
+        line-height: 14px;
+        margin-bottom: 11px;
+        margin-left: 20px;
+    }
+
+    .present__img {
+        right: 21px;
+        top: 27px;
+        max-height: 179px;
+    }
+
+    .present__btn {
+        min-width: 117px;
+        min-height: 27px;
+        font-size: 10px;
+        line-height: 12px;;
+    }
+
+    .present__text {
+        font-size: 10px;
+        line-height: 11px;
+        max-width: 65px;
+    }
+
+    .present__text_color-number {
+        font-size: 26px;
+        line-height: 37px;
+    }
+
+    .present__text_color {
+        font-size: 22px;
+        line-height: 31px;;
+    }
+
+    .present__promo {
+        margin-bottom: 30px;
+        gap: 15px;
+    }
+
+}
+
+@media (max-width: 320px) {
+    .present {
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial;
+   background-color: #1B1A1B;
+    color: #FFFFFF;
+    font-size: 16px;
+
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+section {
+    padding-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    padding: 0;
+    line-height: 50px;
+    margin-bottom: 40px;
+}
+
+.booking-form__booking-item {
+    display: inline-block;
+}
+
+:root {
+    --purpur:#6C0287;
+    --dark-purpur:#640AA3;
+    --light-purpur:#840AA3;
+    --pink:#CD06FF;
+    --page-color:#1B1A1B;
+    --very-dark-purpur:#440F51;
+    --white:#FFFFFF;
+    --dark-white:#EADEED;
+}
+

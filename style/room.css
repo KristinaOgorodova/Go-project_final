@@ -1,0 +1,123 @@
+.halls__photo-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+}
+.halls__vibes {
+    background-image: url("../img/desktop/80vibes.jpg");
+}
+
+.halls__star-wars {
+    background-image: url("../img/desktop/starwars.jpg");
+}
+
+.halls__wild-west {
+    background-image: url("../img/desktop/wild_west.jpg");
+}
+
+.halls__neon-style {
+    background-image: url("../img/desktop/neon_style.png");
+}
+
+.room {
+    min-width:580px;
+    min-height: 349px;
+    background-size: cover;
+}
+
+.halls__desc {
+    font-weight: 700;
+    white-space: pre-line;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 70px;
+    padding-top: 94px;
+}
+
+.halls__title {
+    margin-bottom: 46px;
+}
+
+.halls {
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1024px) {
+
+    .halls {
+        margin-bottom: 70px;
+    }
+    .halls__title {
+        margin-bottom: 30px;
+    }
+
+    .room {
+        min-width: 442px;
+        min-height: 267px;
+    }
+
+    .halls__desc {
+        font-size: 50px;
+        line-height: 60px;
+        padding-top: 73px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .halls {
+        margin-bottom: 65px;
+    }
+
+    .halls__photo-presentation {
+        gap: 17px;
+    }
+
+    .halls__title {
+        margin-bottom: 35px;
+    }
+
+    .room {
+        min-width: 335px;
+        min-height: 200px;
+    }
+
+    .halls__desc {
+        font-size: 40px;
+        line-height: 50px;
+        padding-top: 61px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .halls {
+        margin-bottom: 30px;
+    }
+
+    .halls__photo-presentation {
+        gap: 10px;
+    }
+
+    .halls__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .room {
+        min-width: 280px;
+        min-height: 168px;
+    }
+
+    .halls__desc {
+        font-size: 26px;
+        line-height: 34px;
+        padding-top: 51px;
+    }
+}
+
+
+

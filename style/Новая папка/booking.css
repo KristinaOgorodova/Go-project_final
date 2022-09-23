@@ -1,0 +1,363 @@
+.booking-form {
+    background-color: var(--very-dark-purpur);
+    margin-bottom: 50px;
+}
+
+.booking-form__booking-title {
+    padding-top: 80px;
+}
+
+.border {
+    border: none;
+}
+
+.booking-form__hall-choice {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    gap:60px;
+}
+
+.as-btn {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.booking-form__hall-choice label {
+    background-color: var(--white);
+    border-radius: 8px;
+    min-width: 250px;
+    height: 55px;
+    color: var( --page-color);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 6px;
+    border: 3px solid var(--white);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.button-radio:focus {
+    background-color: var(--white);
+    border: 3px solid var(--dark-purpur);
+}
+
+.booking-form__hall-choice label:hover {
+    background-color: var(--dark-white);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+    border: 3px solid var(--dark-purpur);
+}
+
+.booking-form__hall-choice label:active {
+    background-color: var(--purpur);
+    color: var(--white);
+    box-shadow: none;
+    border: 3px solid var(--white);
+}
+
+.vertical-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.booking-form__game {
+    display: flex;
+    justify-content: space-around;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+
+.little-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 23px;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: var(--white);
+    margin-bottom: 40px;
+}
+
+.booking-form__date-and-time {
+    display: flex;
+    justify-content: center;
+}
+
+.booking-form__fields {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 50px;
+    max-width:980px;
+}
+
+.booking-form__fields input:focus-within {
+    outline: 2px solid var(--pink);
+}
+
+.column input {
+    height: 52px;
+    min-width: 300px;
+}
+
+.booking-form__booking-item {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    flex-direction: column;
+    /*flex-grow: 1;*/
+}
+
+.booking-form__booking-item span {
+    margin-bottom: 6px;
+}
+
+.booking-form__submit {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: var(--purpur);
+    background: var(--white);
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 60px;
+    border: 3px solid var(--white);
+    margin-bottom: 70px;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.booking-form__submit:hover {
+    background-color: var(--dark-white);
+    border: 3px solid var(--purpur);
+}
+
+.booking-form__submit:focus-within {
+    background-color: var(--white);
+    outline: 3px solid var(--purpur);
+}
+
+.booking-form__submit:active {
+    background-color: var(--dark-white);
+    border: 3px solid var(--dark-white);
+    outline: none;
+}
+
+.email {
+    margin-bottom: 40px;
+}
+
+.booking-form__button {
+    margin-bottom: 80px;
+}
+
+.booking-form__first-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-top: 27px;
+
+
+}
+
+.booking-form__second-column,
+.booking-form__third-column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="date"], 
+input[type="time"] {
+    min-width: 134px;
+    height: 52px;
+}
+
+.persons {
+    position: relative;
+    width: 100%;
+    height: 52px;
+}
+
+.persons input {
+    width: 300px;
+    height: 100%;
+    padding-left: 20px;
+}
+
+.persons input::-webkit-outer-spin-button, 
+.persons input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="date"], input[type="time"] {
+    position: relative;
+    color: transparent;
+
+}
+
+input[type="date"]::before, input[type="time"]::before {
+    content: attr(placeholder);
+    position: absolute;
+    color: #211E1E;
+    left: 23px;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.persons {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+input[type="date"]:valid,
+input[type="date"]:focus,
+input[type="date"]:active,
+input[type="time"]:valid,
+input[type="time"]:focus,
+input[type="time"]:active {
+    color: #211E1E;
+}
+
+input[type="date"]:valid::before,
+input[type="date"]:focus::before,
+input[type="date"]:active::before,
+input[type="time"]:valid::before,
+input[type="time"]:focus::before,
+input[type="time"]:active::before {
+    display: none;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    appearance: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+    appearance: none;
+}
+
+input[type="date"]::after, 
+input[type="time"]::after,
+.persons::after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 21px;
+    height: 15px;
+    background-image: url('../img/Polygon\ 1.svg');
+    background-repeat: no-repeat;
+}
+
+.booking-form__console {
+    display: flex;
+}
+
+.booking-form__console span {
+    padding-left: 12px;
+}
+
+.booking-form__board-game span {
+    padding-left: 12px;
+}
+
+.booking-form__other span {
+    padding-left: 12px;
+}
+
+.big-round {
+    position: relative;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 27px;
+    min-height: 27px;
+}
+
+.big-round::before {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-color: var(--white);
+    border-radius: 50%;
+}
+
+.big-round::after {
+    content: '';
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    background-color: var(--very-dark-purpur);
+    border-radius: 50%;
+    visibility: hidden;
+}
+
+.big-round:checked::after {
+    visibility: visible;
+}
+
+.booking-form__board-game,
+.booking-form__other {
+    display: flex;
+}
+
+.big-square {
+    position: relative;
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 27px;
+    min-height: 27px;
+}
+
+.big-square::before {
+    content: '';
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    background-color: var(--white);
+}
+
+.big-square:focus-within, .big-round:focus-within {
+    outline: 2px solid var(--pink);
+}
+
+.big-square::after {
+    content: '';
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-color: transparent;
+    border: 3px solid var(--very-dark-purpur);
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg) translate(-3px, -3px);
+    visibility: hidden;
+}
+
+.big-square:checked::after {
+    visibility: visible;
+}
+

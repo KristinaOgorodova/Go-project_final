@@ -1,0 +1,100 @@
+.questions__title {
+    margin-bottom: 30px;
+}
+
+.questions__faq {
+    background-color: var(--white);
+    color: var(--page-color);
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.questions__faq:last-child {
+    margin-bottom: 0;
+}
+
+.questions__faq:nth-child(odd) {
+    background-color: var(--very-dark-purpur);
+    color: var(--white);
+}
+
+.questions__faq:nth-child(2n):after {
+    content: " ";
+    display: inline-block;
+    float: right;
+    text-align: end;
+    width: 30px;
+    height: 30px;
+    background-image: url("../icons/open-purple.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.questions__faq:nth-child(2n):hover:after{
+    content: " ";
+    display: inline-block;
+    float: right;
+    text-align: end;
+    width: 30px;
+    height: 30px;
+    background-image: url("../icons/purple-focus.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.questions__faq:nth-child(2n):active:after{
+    content: " ";
+    display: inline-block;
+    float: right;
+    text-align: end;
+    width: 30px;
+    height: 30px;
+    background-image: url("../icons/purple-active.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.questions__faq:nth-child(2n+1):after {
+    content: " ";
+    display: inline-block;
+    float: right;
+    text-align: end;
+    width: 30px;
+    height: 30px;
+    background-image: url("../icons/open.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.questions__faq:nth-child(2n+1):hover:after {
+    content: " ";
+    display: inline-block;
+    float: right;
+    text-align: end;
+    width: 30px;
+    height: 30px;
+    background-image: url("../icons/white-focus.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.questions__faq:nth-child(2n+1):active:after {
+    content: " ";
+    display: inline-block;
+    float: right;
+    text-align: end;
+    width: 30px;
+    height: 30px;
+    background-image: url("../icons/white-active.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+

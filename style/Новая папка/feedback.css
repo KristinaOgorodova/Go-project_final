@@ -1,0 +1,56 @@
+.guest-feedback__container {
+    padding: 0 100px;
+}
+
+.guest-feedback__title {
+    margin-bottom: 30px;
+}
+
+.guest-feedback__block {
+    padding-bottom: 40px;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.guest-feedback__text {
+    display: inline-block;
+    vertical-align: middle;
+    width: 70%;
+    padding-bottom: 100px;
+}
+
+figcaption {
+    padding-left: 60px;
+}
+
+.guest-feedback__max {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.guest-feedback__oksana {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.guest-feedback__nikita {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.guest-feedback__block {
+    position: relative;
+}
+
+.guest-feedback__gradient:after{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    width: 280px;
+    height:280px;
+    background: radial-gradient(circle, rgba(196, 196, 196, 0),rgba(108, 2, 135, 0.5)) ;
+    border-radius: 50%;
+}
