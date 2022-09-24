@@ -2,6 +2,10 @@
 @import "./Global_style.css";
 @import "./header.css";
 @import "./present.css";
-@import "presentation.css";
-@import "room.css";
-@import "booking.css";
+@import "./presentation.css";
+@import "./room.css";
+@import "./booking.css";
+@import "about-us.css";
+@import "feedback.css";
+@import "faq.css";
+@import "contacts.css";

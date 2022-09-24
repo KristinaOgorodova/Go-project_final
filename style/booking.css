@@ -1,7 +1,7 @@
 
 .booking-form {
     background-color: var(--very-dark-purpur);
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 .booking-form__booking-title {
@@ -366,6 +366,10 @@ input[type="time"]::after,
 
 
 @media (max-width: 1024px) {
+    .booking-form {
+        margin-bottom: 65px;
+    }
+
     .booking-form__booking-title {
         padding-top: 60px;
         font-size: 30px;
@@ -421,6 +425,10 @@ input[type="time"]::after,
 }
 
 @media (max-width: 768px) {
+
+    .booking-form {
+        margin-bottom: 56px;
+    }
 
     .booking-form__booking-title {
         padding-top: 48px;
@@ -524,6 +532,11 @@ input[type="time"]::after,
 }
 
 @media (max-width: 320px) {
+
+    .booking-form {
+        margin-bottom: 31px;
+    }
+
     .booking-form__booking-title {
         font-size: 14px;
         line-height: 20px;
