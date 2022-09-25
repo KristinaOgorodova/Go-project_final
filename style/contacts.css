@@ -68,6 +68,7 @@
     outline: 1px solid transparent;
     transition-property: all;
     transition-duration: 0.5s;
+    background-size: cover;
 }
 
 .contacts__social-link-icon:hover {
@@ -85,6 +86,131 @@
 }
 
 @media (max-width: 1024px) {
-    
+
+    .contacts__map {
+        max-width: 542px;
+        min-height: 274px;
+    }
+
+    .contacts__title {
+        margin-bottom: 22px;
+    }
+
+    .contacts__social-link-item {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacts__img {
+        width: 26px;
+        margin-right: 10px;
+    }
+
+    .contacts__address {
+        margin-bottom: 44px;
+    }
+
+    .contacts__main-block {
+        margin-bottom: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contacts__main-block {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 71px;
+    }
+
+    .contacts__contacts-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .contacts__address {
+        margin-bottom: 0;
+        padding-left: 85px;
+    }
+
+    .contacts__title {
+        margin-bottom: 29px;
+    }
+
+    .inline {
+        vertical-align: top;
+    }
+
+    .contacts__email {
+        margin-bottom: 0;
+    }
+
+    .contacts__link {
+        padding-left: 23px;
+        margin-bottom: 33px;
+    }
+
+    .contacts__map {
+        max-width: 688px;
+        min-height: 337px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .contacts__social-link-item {
+        width: 30px;
+        height: 30px;
+    }
+
+    .contacts__map {
+        max-width: 280px;
+        min-height: 194px;
+    }
+
+    .contacts__title {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 15px;
+    }
+
+    .inline {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .footer {
+        font-size: 12px;
+        line-height: 16px;
+        flex-direction: column;
+        align-items: center;
+        gap: 19px;
+    }
+
+    .contacts__main-block {
+        margin-bottom: 61px;
+    }
+
+    .contacts__contacts-item {
+        gap: 10px;
+    }
+
+    .contacts__social-link-item{
+        margin-right: 17px;
+    }
+
+    .contacts__phone-number {
+        margin-bottom: 0;
+    }
+
+    .contacts__img {
+        width: 20px;
+    }
+
+    .contacts__address {
+        padding-left: 51px;
+    }
 }
 
