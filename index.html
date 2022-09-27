@@ -12,7 +12,7 @@
     <header>
         <section class="header">
             <div class="container header__container">
-                <img src="./img/logo1.svg" alt="Логотип" class="header__logo">
+                <a href="#main-page"><img src="./img/logo1.svg" alt="Логотип" class="header__logo"></a>
                 <nav class="header__navigation">
                     <ul class="header__list">
                         <li class="header__item"><a href="#room" class="header__link">Залы</a></li>
@@ -22,13 +22,13 @@
                         <li class="header__item"><a href="#contacts" class="header__link">Контакты</a></li>
                     </ul>
                 </nav>
-                <img src="./img/menu.svg" alt="кнопка меню" class="header__menu">
+                <button class="header__menu"><img src="./img/menu.svg" alt="кнопка меню"></button>
                 <button class="header__btn">Заказать звонок</button>
             </div>
         </section>
     </header>
     <main>
-        <section class="present">
+        <section class="present" id="main-page">
             <div class="container present__container">
                 <h1 class="present__title">game over</h1>
                 <img src="img/desktop/gameover.png" alt="" class="present__img">
@@ -90,7 +90,7 @@
             </div>
         </section>
         <section id="room" class="halls">
-           <div class="container">
+            <div class="container">
                 <h2 class="halls__title">Наши залы</h2>
                 <div class="halls__photo-presentation">
 
@@ -111,7 +111,7 @@
                             style</p>
                     </div>
                 </div>
-           </div>
+            </div>
         </section>
         <section id="booking" class="booking-form">
             <div class="container">
@@ -122,19 +122,19 @@
                         <legend class="form-title">Выбери зал</legend>
                         <div class="booking-form__hall-choice">
 
-                            <input class="as-btn" type="radio" name='space' value="80's vibes" id="booking-room-80's">
+                            <input class="as-btn" type="radio" name="space" value="80's vibes" id="booking-room-80's">
                             <label class="booking-form__80's-vibes button-radio" for="booking-room-80's">80's vibes</label>
 
                             <label class="booking-form__star-wars button-radio" for="booking-room-star-wars">star wars</label>
-                            <input class="as-btn" type="radio" name='space' value="star wars" id="booking-room-star-wars">
+                            <input class="as-btn" type="radio" name="space" value="star wars" id="booking-room-star-wars">
 
 
                             <label class="booking-form__wild-west button-radio" for="booking-room-wild-west">wild west</label>
-                            <input class="as-btn" type="radio" name='space' value="wild west" id="booking-room-wild-west">
+                            <input class="as-btn" type="radio" name="space" value="wild west" id="booking-room-wild-west">
 
 
                             <label class="booking-form__neon-style button-radio" for="booking-room-neon">neon style</label>
-                            <input class="as-btn" type="radio" name='space' value="neon style" id="booking-room-neon">
+                            <input class="as-btn" type="radio" name="space" value="neon style" id="booking-room-neon">
 
 
                         </div>

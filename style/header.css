@@ -125,6 +125,8 @@
         height: 29px;
         margin-right: 10px;
         align-self: center;
+        background-color: transparent;
+        border: none;
     }
 
     .header__container {
