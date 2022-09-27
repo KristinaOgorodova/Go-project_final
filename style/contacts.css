@@ -115,7 +115,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     .contacts__main-block {
         flex-direction: column;
@@ -148,7 +148,7 @@
     }
 
     .contacts__link {
-        padding-left: 23px;
+        padding-left: 0;
         margin-bottom: 33px;
     }
 
@@ -158,7 +158,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 415px) {
 
     .contacts__social-link-item {
         width: 30px;

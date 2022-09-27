@@ -116,6 +116,10 @@
         display: none;
     }
 
+    .questions__faq:nth-child(4) {
+        margin-bottom: 0;
+    }
+
     .questions__faq,
     .questions__faq:nth-child(odd) {
         background-color: var(--white);
@@ -153,7 +157,7 @@
 @media (max-width: 768px) {
 
     .questions {
-        margin-bottom: 70px;
+        margin-bottom: 66px;
     }
 
     .questions__faq,
@@ -180,7 +184,7 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 688px) {
 
     .questions {
         margin-bottom: 31px;
