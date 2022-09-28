@@ -28,7 +28,7 @@
     appearance: none;
 }
 
-.booking-form__hall-choice label {
+.button-radio {
     background-color: var(--white);
     border-radius: 8px;
     min-width: 250px;
@@ -43,21 +43,25 @@
     border: 3px solid var(--white);
     transition-property: all;
     transition-duration: 0.5s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.button-radio:focus {
+.as-btn:focus + label {
     background-color: var(--white);
     border: 3px solid var(--dark-purpur);
 }
 
-.booking-form__hall-choice label:hover {
+.button-radio:hover {
     background-color: var(--dark-white);
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
     border: 3px solid var(--dark-purpur);
 }
 
 
-.booking-form__hall-choice input[type="radio"]:checked+label {
+.as-btn:checked + label {
     background-color: var(--purpur);
     color: var(--white);
     box-shadow: none;

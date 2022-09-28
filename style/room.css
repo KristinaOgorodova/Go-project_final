@@ -4,32 +4,30 @@
     gap:20px;
     justify-content: center;
 }
-.halls__vibes {
-    background-image: url("../img/desktop/80vibes.jpg");
-}
 
-.halls__star-wars {
-    background-image: url("../img/desktop/starwars.jpg");
-}
-
-.halls__wild-west {
-    background-image: url("../img/desktop/wild_west.jpg");
-}
-
-.halls__neon-style {
-    background-image: url("../img/desktop/neon_style.png");
+.halls__photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .room {
-    min-width:580px;
+    position: relative;
+    max-width:580px;
     min-height: 349px;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-basis: 48%;
 }
 
 .halls__desc {
+    position: relative;
     font-weight: 700;
     white-space: pre-line;
     text-transform: uppercase;
@@ -55,8 +53,9 @@
     }
 
     .room {
-        min-width: 442px;
+        max-width: 442px;
         min-height: 267px;
+        flex-basis: 48%;
     }
 
     .halls__desc {
@@ -81,8 +80,9 @@
     }
 
     .room {
-        min-width: 335px;
+        max-width: 335px;
         min-height: 200px;
+        flex-basis: 48%;
     }
 
     .halls__desc {
@@ -108,8 +108,9 @@
     }
 
     .room {
-        min-width: 280px;
+        max-width: 280px;
         min-height: 168px;
+        flex-basis: 100%;
     }
 
     .halls__desc {
