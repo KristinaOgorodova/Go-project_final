@@ -612,6 +612,7 @@ input[type="time"]::after,
         justify-content: flex-start;
         gap: 12px;
         padding-top: 12px;
+        max-width: 280px;
     }
 
     .booking-form__booking-item_second-line {
@@ -624,8 +625,10 @@ input[type="time"]::after,
     }
 
     .persons input {
-        width: 280px;
+        width: 100%;
     }
+
+
 
     .booking-form__submit {
         font-size: 18px;
