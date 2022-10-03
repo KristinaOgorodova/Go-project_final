@@ -91,6 +91,14 @@
     }
 }
 
+@media (max-width: 504px) {
+    .room {
+        flex-basis: 100%;
+        max-width: 280px;
+        min-height: 168px;
+    }
+}
+
 @media (max-width: 320px) {
 
     .halls {
@@ -105,12 +113,6 @@
         font-size: 14px;
         line-height: 18px;
         margin-bottom: 15px;
-    }
-
-    .room {
-        max-width: 280px;
-        min-height: 168px;
-        flex-basis: 100%;
     }
 
     .halls__desc {

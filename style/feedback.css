@@ -16,13 +16,13 @@
     font-size: 20px;
     line-height: 28px;
     max-width: 980px;
-    position: relative;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .guest-feedback__text {
-    display: inline-block;
-    vertical-align: middle;
     width: 70%;
     padding: 0 0 120px 15px;
 }
@@ -32,25 +32,15 @@ figcaption {
     padding-top: 6px;
 }
 
-.guest-feedback__max {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.guest-feedback__oksana {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.guest-feedback__nikita {
-    display: inline-block;
-    vertical-align: middle;
-
-}
-
 .guest-feedback__photo {
     width: 280px;
     height:280px;
+}
+
+.guest-feedback__max,
+.guest-feedback__oksana,
+.guest-feedback__nikita {
+    position: relative;
 }
 
 .guest-feedback__gradient:after{
@@ -65,7 +55,7 @@ figcaption {
     border-radius: 50%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1122px) {
 
     .guest-feedback {
         margin-bottom: 12px;
@@ -113,7 +103,7 @@ figcaption {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 870px) {
 
     .guest-feedback {
         margin-bottom: 60px;
@@ -159,7 +149,7 @@ figcaption {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 702px) {
 
     .guest-feedback {
         margin-bottom: 73px;
@@ -172,8 +162,7 @@ figcaption {
     }
 
     .guest-feedback__block {
-        max-width: 688px;
-        padding: 0 0 0 0;
+        flex-direction: column;
         margin-bottom: 22px;
     }
 
@@ -181,7 +170,7 @@ figcaption {
         font-size: 12px;
         line-height: 16px;
         padding: 0 0 0 0;
-        width: 100%;
+        width: 70%;
     }
 
     .guest-feedback__photo {
@@ -192,24 +181,23 @@ figcaption {
     .guest-feedback__gradient:after {
         width: 86px;
         height: 86px;
-        left: 98px;
     }
 
 
     figcaption {
-        padding: 0px 0 0 0px;
+        padding: 0 0 0 0;
         font-size: 14px;
         line-height: 20px;
+        margin-bottom: 16px;
     }
 
     .guest-feedback__container {
         padding: 0 20px;
     }
+}
 
-    .guest-feedback__max,
-    .guest-feedback__oksana,
-    .guest-feedback__nikita {
-        padding: 0 0 0 98px;
-        margin-bottom: 14px ;
+@media (max-width: 320px) {
+    .guest-feedback__text {
+        width: 100%;
     }
 }
