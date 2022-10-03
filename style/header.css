@@ -16,7 +16,7 @@
 .header__list {
     display: flex;
     gap: 40px;
-    flex-wrap: wrap
+    margin-right: 5px;
 }
 
 .header__link {
@@ -57,6 +57,9 @@
 .header__logo {
     width: 120px;
     height: 66px;
+}
+
+.header__logo-link {
     margin-right: 10px;
 }
 
@@ -64,7 +67,7 @@
     display: none;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1279px) {
 
     .header {
         margin-bottom: 19px;
@@ -103,7 +106,7 @@
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 878px) {
 
     .header {
         padding-top: 35px;
