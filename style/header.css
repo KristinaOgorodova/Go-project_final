@@ -6,6 +6,7 @@
 .header__container {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .header__navigation {
@@ -134,6 +135,7 @@
 
     .header__container {
         display: flex;
+        z-index: 2000;
     }
 
 

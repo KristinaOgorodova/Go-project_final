@@ -12,3 +12,5 @@ overlay.addEventListener('click', e => {
         closeModal();
     }
 });
+
+export {overlay,modalOpenBtn}
