@@ -40,28 +40,28 @@
                 </div>
 
 
-                <button class="header__btn">Заказать звонок</button>
+                <button class="header__btn" id="header__btn">Заказать звонок</button>
             </div>
-            <div class="overlay">
-                <div class="header__form-container">
-                    <button class="form-close-btn" type="button"></button>
-                    <h2 class="form-title form-title_phone">Заказать звонок</h2>
-                    <form action="https://jsonplaceholder.typicode.com/posts"
-                         method="POST">
-                        <fieldset class="header__form-add">
-                            <div class="form-group">
-                                <label for="name" class="form-label">Имя:</label>
-                                <input type="text" id="name" class="form-input" name="name" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone" class="form-label">Телефон:</label>
-                                <input type="number" id="phone" class="form-input"
-                                       name="phone" required>
-                            </div>
-                            <button type="submit" class="header__btn-submit">Позвонить мне</button>
-                        </fieldset>
-                    </form>
-                </div>
+        <div class="overlay-form">
+            <div class="header__form-container">
+                <button class="form-close-btn" type="button"></button>
+                <h2 class="form-title form-title_phone">Заказать звонок</h2>
+                <form action="https://jsonplaceholder.typicode.com/posts"
+                     method="POST">
+                    <fieldset class="header__form-add">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Имя:</label>
+                            <input type="text" id="name" class="form-input" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Телефон:</label>
+                            <input type="number" id="phone" class="form-input"
+                                   name="phone" required>
+                        </div>
+                        <button type="submit" class="header__btn-submit">Позвонить мне</button>
+                    </fieldset>
+                </form>
+            </div>
             </div>
         </section>
     </header>
@@ -369,7 +369,12 @@
             <div class="container">
                 <h2 class="questions__title">Частые вопросы</h2>
                 <ul class="questions__block">
-                    <li class="questions__faq">Можно ли забронировать комнату онлайн?</li>
+                    <li class="questions__faq">
+                        <div>
+                            <p>Можно ли забронировать комнату онлайн?</p>
+                            <button></button>
+                        </div>
+                    </li>
                     <li class="questions__faq">Могут ли вернуть деньги за бронь?</li>
                     <li class="questions__faq">Какая комната самая популярная?</li>
                     <li class="questions__faq">Как получить VIP карту?</li>

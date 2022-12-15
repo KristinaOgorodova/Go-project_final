@@ -1,5 +1,9 @@
 .overlay {
+    display: none;
     background-color: transparent;
+}
+
+.overlay-form {
     display: none;
 }
 
@@ -41,7 +45,7 @@
     .header__menu.active,
     .header__btn.active {
         position: relative;
-        z-index: 2000;
+        z-index: 1000;
     }
 
     .header__btn-mobile {
@@ -54,13 +58,12 @@
         left: 0;
         top: 10px;
         position: relative;
-        box-shadow:rgba(27, 26, 27, 0.7);
         background: #440F51;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-
+        z-index: 3000;
     }
 
     .form-input {
@@ -122,6 +125,21 @@
         left: 0;
         z-index: 1000;
         background: rgba(0, 0, 0, 0.9);
+        transition: 0.3s ease-in-out;
+        display: flex;
+    }
+
+    .overlay-form_open {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.9);
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transition: 0.3s ease-in-out;
     }
 

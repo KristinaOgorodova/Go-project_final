@@ -1,8 +1,8 @@
-export const overlay = document.querySelector('.overlay');
-const modalOpenBtn = document.querySelector('.header__btn');
+const overlay = document.querySelector('.overlay-form');
+const modalOpenBtn = document.querySelector('#header__btn');
 
-const openModal = () => overlay.classList.add('overlay_open');
-const closeModal = () => overlay.classList.remove('overlay_open');
+const openModal = () => overlay.classList.add('overlay-form_open');
+const closeModal = () => overlay.classList.remove('overlay-form_open');
 
 modalOpenBtn.addEventListener('click', openModal);
 

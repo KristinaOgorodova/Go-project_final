@@ -1,10 +1,10 @@
-import {overlay} from './modal.js';
 
 const menuOpenBtn = document.querySelector('.header__menu');
 const menu = document.querySelector('.mobile-menu');
 const logo = document.querySelector('.header__logo-link');
 const oderBtn = document.querySelector('.header__btn');
 const img = document.querySelector('.image-btn');
+const overlay = document.querySelector('.overlay');
 
 const openMenu = () => {
   menu.classList.add('active');
