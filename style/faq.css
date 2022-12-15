@@ -7,6 +7,12 @@
 }
 
 .questions__faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.questions__faq {
     background-color: var(--white);
     color: var(--main-bg-color);
     font-weight: 700;
@@ -26,45 +32,12 @@
     color: var(--white);
 }
 
-.questions__faq:nth-child(2n):after {
-    content: " ";
-    position: absolute;
-    right: 70px;
-    top: 22px;
-    width: 46px;
-    height: 46px;
-    background-image: url("../icons/open-purple.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition-property: all;
-    transition-duration: 0.5s;
+.questions__faq:nth-child(odd) {
+    background-color: var(--very-dark-purpur);
+    color: var(--white);
 }
 
-.questions__faq:nth-child(2n):hover:after{
-    content: " ";
-    position: absolute;
-    right: 70px;
-    top: 22px;
-    width: 46px;
-    height: 46px;
-    background-image: url("../icons/purple-focus.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.questions__faq:nth-child(2n):active:after{
-    content: " ";
-    position: absolute;
-    right: 70px;
-    top: 22px;
-    width: 46px;
-    height: 46px;
-    background-image: url("../icons/purple-active.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.questions__faq:nth-child(2n+1):after {
+.white-btn {
     content: " ";
     position: absolute;
     right: 70px;
@@ -78,7 +51,45 @@
     transition-duration: 0.5s;
 }
 
-.questions__faq:nth-child(2n+1):hover:after {
+.purple-btn:hover{
+    content: " ";
+    position: absolute;
+    right: 70px;
+    top: 22px;
+    width: 46px;
+    height: 46px;
+    background-image: url("../icons/purple-focus.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.purple-btn:active{
+    content: " ";
+    position: absolute;
+    right: 70px;
+    top: 22px;
+    width: 46px;
+    height: 46px;
+    background-image: url("../icons/purple-active.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.purple-btn {
+    content: " ";
+    position: absolute;
+    right: 70px;
+    top: 22px;
+    width: 46px;
+    height: 46px;
+    background-image: url("../icons/open-purple.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.white-btn:hover {
     content: " ";
     position: absolute;
     right: 70px;
@@ -90,7 +101,7 @@
     background-repeat: no-repeat;
 }
 
-.questions__faq:nth-child(2n+1):active:after {
+.white-btn:active {
     content: " ";
     position: absolute;
     right: 70px;
@@ -101,6 +112,19 @@
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+.purple-btn,
+.white-btn {
+    border: none;
+    background-color: transparent;
+}
+
+.white-btn-img,
+.purple-btn-img {
+    background-color: transparent;
+}
+
+
 
 @media (max-width: 1024px) {
 
@@ -131,22 +155,22 @@
         min-height: 69px;
     }
 
-    .questions__faq:nth-child(2n+1):after,
-    .questions__faq:nth-child(2n):after {
+    .purple-btn,
+    .white-btn {
         background-image: url("../icons/open-purple.svg");
         top: 12px;
         right: 19px;
     }
 
-    .questions__faq:nth-child(2n+1):hover:after,
-    .questions__faq:nth-child(2n):hover:after{
+    .purple-btn:hover,
+    .white-btn:hover{
         background-image: url("../icons/purple-focus.svg");
         top: 12px;
         right: 19px;
     }
 
-    .questions__faq:nth-child(2n+1):active:after,
-    .questions__faq:nth-child(2n):active:after{
+    .purple-btn:active,
+    .white-btn:active{
         background-image: url("../icons/purple-active.svg");
         top: 12px;
         right: 19px;
@@ -194,7 +218,7 @@
     .questions__faq:nth-child(odd) {
         font-size: 12px;
         line-height: 16px;
-        padding: 14px 18px 0 13px;
+        padding: 0 18px 0 13px;
         margin-bottom: 10px;
         min-height: 46px;
     }
@@ -205,12 +229,12 @@
         margin-bottom: 14px;
     }
 
-    .questions__faq:nth-child(2n+1):after,
-    .questions__faq:nth-child(2n):after,
-    .questions__faq:nth-child(2n+1):hover:after,
-    .questions__faq:nth-child(2n):hover:after,
-    .questions__faq:nth-child(2n+1):active:after,
-    .questions__faq:nth-child(2n):active:after {
+    .purple-btn,
+    .white-btn,
+    .purple-btn:hover,
+    .white-btn:hover,
+    .purple-btn:active,
+    .white-btn:active {
         width: 30px;
         height: 30px;
         right: 14px;
