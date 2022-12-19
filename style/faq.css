@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 70px;
 }
 
 .questions__faq-list {
@@ -17,10 +18,9 @@
     color: var(--main-bg-color);
     font-weight: 700;
     font-size: 24px;
-    padding: 30px 70px;
-    margin-bottom: 20px;
     list-style: none;
     position: relative;
+    margin-bottom: 20px;
 }
 
 .questions__faq-list:last-child {
@@ -128,10 +128,18 @@
     height: 0;
     overflow: hidden;
     transition: height .4s ease-in-out;
+    background-color: #FFFFFF;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px ;
+    padding-right: 70px;
+
 }
 
-.questions__faq-answer .faq-active {
-    height: auto;
+.faq-active.questions__faq-answer {
+    height: 214px;
 }
 
 
@@ -140,6 +148,11 @@
 
     .questions {
         margin-bottom: 59px;
+    }
+
+    .questions__faq {
+        align-items: flex-end;
+        justify-content: space-between;
     }
 
     .questions__title {
@@ -168,22 +181,19 @@
     .purple-btn,
     .white-btn {
         background-image: url("../icons/open-purple.svg");
-        top: 12px;
-        right: 19px;
+        top: 40px;
     }
 
     .purple-btn:hover,
     .white-btn:hover{
         background-image: url("../icons/purple-focus.svg");
-        top: 12px;
-        right: 19px;
+        top: 40px;
     }
 
     .purple-btn:active,
     .white-btn:active{
         background-image: url("../icons/purple-active.svg");
-        top: 12px;
-        right: 19px;
+        top: 40px;
     }
     
 }
@@ -192,6 +202,15 @@
 
     .questions {
         margin-bottom: 66px;
+    }
+
+    .questions__faq {
+        padding-left: 54px;
+    }
+
+    .questions__faq-answer {
+        padding-right: 50px;
+        padding-left: 50px;
     }
 
     .questions__faq-list,
@@ -224,6 +243,17 @@
         margin-bottom: 31px;
     }
 
+    .questions__faq {
+        padding: 0;
+    }
+    .questions__faq-answer {
+        padding-left: 0;
+    }
+
+    .faq-active.questions__faq-answer {
+        height: 100px;
+    }
+
     .questions__faq-list,
     .questions__faq-list:nth-child(odd) {
         font-size: 12px;
@@ -247,8 +277,8 @@
     .white-btn:active {
         width: 30px;
         height: 30px;
-        right: 14px;
-        top: 7px;
+        right: 13px;
+        top: 9px;
     }
 }
 

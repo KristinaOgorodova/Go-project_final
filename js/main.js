@@ -1,3 +1,3 @@
 import './modal.js';
 import './menu.js';
-import './faq';
+import './faq.js';

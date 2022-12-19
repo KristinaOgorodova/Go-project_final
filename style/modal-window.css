@@ -18,7 +18,7 @@
         width: 100%;
         height: 0;
         background-color: #1B1A1B;
-        z-index: 1000;
+        z-index: 50;
         top: 62px;
         left: 0;
         transition: height 0.5s ease-out;
@@ -45,7 +45,12 @@
     .header__menu.active,
     .header__btn.active {
         position: relative;
-        z-index: 1000;
+        z-index: 52;
+    }
+
+    .header__container.active {
+        position: relative;
+        z-index: 55;
     }
 
     .header__btn-mobile {
@@ -63,7 +68,7 @@
         flex-direction: column;
         justify-content: center;
         margin: 0 auto;
-        z-index: 3000;
+        z-index: 50;
     }
 
     .form-input {
@@ -123,7 +128,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 1000;
+        z-index: -1;
         background: rgba(0, 0, 0, 0.9);
         transition: 0.3s ease-in-out;
         display: flex;
@@ -135,7 +140,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 1000;
+        z-index: 50;
         background: rgba(0, 0, 0, 0.9);
         display: flex;
         justify-content: center;

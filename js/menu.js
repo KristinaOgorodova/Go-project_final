@@ -5,13 +5,12 @@ const logo = document.querySelector('.header__logo-link');
 const oderBtn = document.querySelector('.header__btn');
 const img = document.querySelector('.image-btn');
 const overlay = document.querySelector('.overlay');
+const headerContainer = document.querySelector('.header__container')
 
 const openMenu = () => {
   menu.classList.add('active');
   overlay.classList.add('overlay_open');
-  menuOpenBtn.classList.add('active');
-  logo.classList.add('active');
-  oderBtn.classList.add('active');
+  headerContainer.classList.add('active');
   img.src = '../icons/close-menu-btn.png';
 };
 
