@@ -11,6 +11,11 @@
     display: none;
 }
 
+.header__menu_close {
+    background-color: transparent;
+    display: none;
+}
+
 @media (max-width: 768px) {
 
     .mobile-menu {
@@ -150,6 +155,17 @@
 
     .header__btn-popup {
         display: none;
+    }
+
+    .header__menu_close.active {
+        display: flex;
+        order: -1;
+        width: 54px;
+        height: 29px;
+        margin-right: 10px;
+        align-self: center;
+        border: none;
+
     }
 }
 

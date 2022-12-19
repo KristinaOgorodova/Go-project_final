@@ -133,6 +133,10 @@
         border: none;
     }
 
+    .header__menu.active {
+        display: none;
+    }
+
     .header__container {
         display: flex;
     }
